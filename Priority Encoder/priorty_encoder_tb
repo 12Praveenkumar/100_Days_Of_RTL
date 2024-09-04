@@ -1,0 +1,18 @@
+module pencoder_tb();
+reg [7:0]i;
+wire [2:0]y;
+priencoder df1(.i(i),.y(y),.idle(idle));
+initial
+begin
+i[7]=1;
+i[6]=1;
+
+i[5]=1;
+i[4]=1;
+
+i[3]=0;
+i[1]=0;
+i[0]=1;
+i[2]=0;
+end
+endmodule
