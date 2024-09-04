@@ -1,0 +1,29 @@
+module encoder( 
+input [7:0]i,output [2:0]y);
+assign y[0]=i[1]|i[3]|i[5]|i[7];
+assign y[1]=i[2]|i[3]|i[6]|i[7];
+assign y[2]=i[4]|i[5]|i[6]|i[7];
+endmodule
+module priorty(a,h,idle);
+input [7:0] a;
+output [7:0] h;
+output idle;
+assign h[7]=a[7];
+assign h[6]=a[6]&~a[7];
+assign h[5]=a[5]&~a[6]&~a[7];
+assign h[4]=a[4]&~a[5]&~a[6]&~a[7];
+assign h[3]=a[3]&~a[4]&~a[5]&~a[6]&~a[7];
+assign h[2]=a[2]&~a[3]&~a[4]&~a[5]&~a[6]&~a[7];
+assign h[1]=a[1]&~a[2]&~a[3]&~a[4]&~a[5]&~a[6]&~a[7];
+assign h[1]=a[0]&~a[1]&~a[2]&~a[3]&~a[4]&~a[5]&~a[6]&~a[7];
+assign idle=~a[0]&~a[1]&~a[2]&~a[3]&~a[4]&~a[5]&~a[6]&~a[7];
+endmodule
+module priencoder(i,y,idle);
+input [7:0]i;
+output [2:0]y;
+output idle;
+wire [7:0]w1;
+priorty f1(i,w1,idle);
+encoder f2(w1,y);
+
+endmodule
