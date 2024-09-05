@@ -2,3 +2,4 @@
 # Day 1 : Bidirectional Buffer,Ripple Carry Adder
 # Day 2 : ALU
 # Day 3 : Priority Encoder
+# Day4  :D Flipflop
