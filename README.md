@@ -3,6 +3,6 @@
 # Day 2 : ALU
 # Day 3 : Priority Encoder
 # Day4  :D Flipflop
-#Day 5  :T FlipFlop 
-#Day 6  : Decoder 
-#Day 7  : Mux
+# Day 5  :T FlipFlop 
+# Day 6  : Decoder 
+# Day 7  : Mux
