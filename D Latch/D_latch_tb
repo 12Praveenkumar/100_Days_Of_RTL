@@ -1,0 +1,43 @@
+module D_Latch_tb;
+  reg D;
+  reg En;
+  wire Q;
+
+D_Latch uut (
+    .D(D),
+    .En(En),
+    .Q(Q)
+);
+
+initial begin
+    D = 0;
+    En = 0;
+    #10;
+  
+    D = 1; 
+    En = 1;
+    #10;
+  
+    D = 0;
+    En = 1;
+    #10;
+  
+    En = 0;
+    #10;
+    D = 1; En = 0;
+    #10;
+  
+    En = 1;
+    #10;
+    D = 0; En = 1;
+    #10;
+    
+    $finish;
+end
+
+initial 
+  begin
+    $monitor("At time %0t: D = %b, En = %b, Q = %b", $time, D, En, Q);
+  end
+  
+endmodule
