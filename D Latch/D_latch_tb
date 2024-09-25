@@ -39,5 +39,5 @@ initial
   begin
     $monitor("At time %0t: D = %b, En = %b, Q = %b", $time, D, En, Q);
   end
-  
+ 
 endmodule
