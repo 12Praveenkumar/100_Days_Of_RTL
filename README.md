@@ -20,3 +20,4 @@
 # Day 19 :Clock Divider
 # Day 20 : JK latch
 # Day 21 :4-bit Comparator
+# Day 22 :Posedge_Detector 
