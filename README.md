@@ -21,3 +21,5 @@
 # Day 20 : JK latch
 # Day 21 :4-bit Comparator
 # Day 22 :Posedge_Detector 
+# Day 23: Gray_Counter
+# Day 24: SR flipflop using T flipflop
