@@ -23,3 +23,5 @@
 # Day 22 :Posedge_Detector 
 # Day 23: Gray_Counter
 # Day 24: SR flipflop using T flipflop
+# Day 25: D flipflop using T flipflop
+# Day 26: JK flipflop using T flipflop
