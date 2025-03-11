@@ -1,4 +1,5 @@
 # 30_Days_Of_RTL
+
 # Day 1 : Bidirectional Buffer,Ripple Carry Adder
 # Day 2 : ALU
 # Day 3 : Priority Encoder
@@ -23,6 +24,7 @@
 # Day 22 :Posedge_Detector 
 # Day 23: Gray_Counter
 # Day 24: SR flipflop using T flipflop
-# Day 25: D flipflop using T flipflop
-# Day 26: JK flipflop using T flipflop
-# Day 27: 4_bit_parallel adder
+# Day 26: D flipflop using T flipflop
+# Day 28: JK flipflop using D flipflop
+# Day 29: JK Flip Flop using T Flipflop
+# Day 30: 4_bit_parallel adder
